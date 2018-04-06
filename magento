@@ -1,0 +1,126 @@
+## PERMITIR REGRAS DE ROBOTS.TXT PARA TODOS OS CRAWLERS
+User-agent: *
+
+## NAO INDEXAR ARQUIVOS DE DESENVOLVIMENTO
+Disallow: /CVS
+Disallow: /*.svn$
+Disallow: /*.idea$
+Disallow: /*.sql$
+Disallow: /*.tgz$
+
+## NAO INDEXAR PASTAS
+Disallow: /admin/
+Disallow: /app/
+Disallow: /downloader/
+Disallow: /errors/
+Disallow: /includes/
+Disallow: /lib/
+Disallow: /pkginfo/
+Disallow: /shell/
+Disallow: /var/
+
+## NAO INDEXAR ARQUIVOS
+Disallow: /api.php
+Disallow: /cron.php
+Disallow: /cron.sh
+Disallow: /error_log
+Disallow: /get.php
+Disallow: /install.php
+Disallow: /LICENSE.html
+Disallow: /LICENSE.txt
+Disallow: /LICENSE_AFL.txt
+Disallow: /README.txt
+Disallow: /RELEASE_NOTES.txt
+
+
+## MELHORIAS DE SEO
+
+## NAO INDEXAR PAGINAS FILTRADAS
+Disallow: /*?dir*
+Disallow: /*?dir=desc
+Disallow: /*?dir=asc
+Disallow: /*?limit=all
+Disallow: /*?mode*
+
+## NAO INDEXAR LINKS COM session IDs
+Disallow: /*?SID=
+
+## NAO INDEXAR PAGINAS COM REQUISICOES DE USUARIOS
+Disallow: /checkout/
+Disallow: /onestepcheckout/
+Disallow: /customer/
+Disallow: /customer/account/
+Disallow: /customer/account/login/
+
+## NAO INDEXAR PAGINAS DE BUSCA E PAGINAS DE SEO SEM OTIMIZACOES
+Disallow: /catalogsearch/
+Disallow: /catalog/product_compare/
+
+
+## CONFIGURACOES DE SERVIDOR
+
+## NAO INDEXAR ARQUIVOS
+Disallow: /cgi-bin/
+Disallow: /cleanup.php
+Disallow: /apc.php
+Disallow: /memcache.php
+Disallow: /phpinfo.php
+
+
+## NAO INDEXAR SPIDER
+User-Agent: AhrefsBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Baiduspider-imagem
+Disallow: /
+
+User-agent: Baiduspider-video
+Disallow : /
+
+User-agent: Baiduspider-news
+Disallow: /
+
+User-agent: Baiduspider-favo
+Disallow: /
+
+User-agent: Baiduspider-cpro
+Disallow: /
+
+User-agent: Baiduspider-anúncios
+Disallow: /
+
+User-agent: Baidu
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+ 
+User-agent: JikeSpider
+Disallow: /
+ 
+User-agent: proximic
+Disallow: /
+ 
+User-agent: TwengaBot-2.0
+Disallow: /
+ 
+User-agent: bingbot/2.0
+Disallow: /
+
+User-agent: majestic12
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
